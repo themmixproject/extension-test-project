@@ -2,3 +2,25 @@
 @import "base/vars";
 @import "base/print";
 @import "base/fonts";
+
+body {
+    background-color: rgb(43, 43, 43);
+    margin: 0;
+    padding: 0;
+}
+#app {
+    margin: 20px;
+    background-color: #666666;
+    padding: 20px
+}
+
+#link-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#link {
+    padding: 40px;
+    background-color: skyblue;
+}
