@@ -11,7 +11,7 @@ body {
 #app {
     margin: 20px;
     background-color: #b3b3b3;
-    padding: 20px
+    padding: 20px;
 }
 
 #link-container {
@@ -24,3 +24,43 @@ body {
     padding: 40px;
     background-color: skyblue;
 }
+
+figure {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-right: none;
+    border-top: none;
+  }
+  
+  figure:before,
+  figure:after {
+    content: '';
+    position: absolute;
+  }
+  
+  figure::after {
+    // left: 50%;
+    // right: -50%;
+    left: -2px;
+    top: -100px;
+    background: transparent;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 0 100em red;
+  }
+  
+//   figure:after {
+//     left: -1px;
+//     bottom: 0px;
+//     height: 16px;
+//     width: 128px;
+//     border-top-left-radius: 0;
+//     border-bottom-left-radius: 5px;
+//     border-left: 1px solid black;
+//     border-bottom: 1px solid black;
+//   }
