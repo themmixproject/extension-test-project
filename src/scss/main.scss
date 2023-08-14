@@ -33,15 +33,15 @@ figure {
     border: 2px solid black;
     border-right: none;
     border-top: none;
-  }
-  
-  figure:before,
-  figure:after {
-    content: '';
+}
+
+figure:before,
+figure:after {
+    content: "";
     position: absolute;
-  }
-  
-  figure::after {
+}
+
+figure::after {
     // left: 50%;
     // right: -50%;
     left: -2px;
@@ -52,8 +52,8 @@ figure {
     border: 2px solid black;
     border-radius: 50%;
     box-shadow: 0 0 0 100em red;
-  }
-  
+}
+
 //   figure:after {
 //     left: -1px;
 //     bottom: 0px;
@@ -64,3 +64,28 @@ figure {
 //     border-left: 1px solid black;
 //     border-bottom: 1px solid black;
 //   }
+
+#card-container {
+    display: flex;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: #ffb6c1;
+    margin: 20px;
+    float: left;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
