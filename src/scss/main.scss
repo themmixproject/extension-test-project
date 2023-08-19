@@ -67,6 +67,7 @@ figure::after {
 
 #card-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -75,6 +76,7 @@ figure::after {
     background-color: #ffb6c1;
     margin: 20px;
     float: left;
+    padding: 20px;
 }
 
 .card:hover {
@@ -89,3 +91,29 @@ figure::after {
     color: grey;
     font-size: 22px;
 }
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+td {
+    padding: 10px;
+    background-color: #FFB6C1;
+}
+
+td div {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+td:nth-child(even) {
+    background-color: #ADD8E6;
+}
+
+a {
+    display: block;
+    margin-bottom: 5px;
+}
+
