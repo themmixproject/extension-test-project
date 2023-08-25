@@ -10,7 +10,6 @@ body {
 }
 #app {
     margin: 20px;
-    background-color: #b3b3b3;
     padding: 20px;
 }
 
@@ -112,8 +111,81 @@ td:nth-child(even) {
     background-color: #ADD8E6;
 }
 
-a {
-    display: block;
-    margin-bottom: 5px;
-}
 
+#ac-element-list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    list-style: none;
+    padding: 0 5px;
+    padding-top: 5px;
+
+    margin-bottom: 50px;
+}
+    #ac-element-list li {
+        display: flex;
+        justify-content: space-between;
+
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: #f0f0f0;
+        width: 100%;
+    }
+
+    #ac-element-list li .ac-action-type {
+        background-color: #dddddd;
+        color: #636363;
+        font-style: italic;
+        padding: 5px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    .ac-action-type span {
+        padding: 0;
+    }
+    #ac-element-list li .content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 5px;
+    }
+    
+    #ac-element-list li .content-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 13px;
+        padding-bottom: 3px;
+    }
+
+    .ac-element-list-item-content div,span,input,a {
+        padding: 3px;
+    }
+
+    #ac-element-list li .content input {
+        width: 100%;
+        outline: 0;
+        border: 0;
+        font-size: 16px;
+    }
+
+    #ac-element-list li .ac-delete-btn {
+        padding: 0;
+        color: red;
+        padding-left: 0;
+        margin: 0;
+        display: block;
+        outline: 0;
+        border: 0;
+        background-color: transparent;
+        font-size: inherit;
+    }
+
+    #ac-element-list li .ac-delete-btn:active {
+        color: rgb(219, 0, 0);
+    }
