@@ -153,23 +153,23 @@ td:nth-child(even) {
         margin-left: 3px;
     }
     
-    #ac-element-list li .content-bottom-wrapper {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
     #ac-element-list li .content-top {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         font-size: 13px;
-        margin-bottom: 3px;
+        
+    }
+    
+    #ac-element-list li .content-bottom-wrapper {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-top: 3px;
     }
 
     #ac-element-list .content {
         overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
 
     #ac-element-list li .content input {
