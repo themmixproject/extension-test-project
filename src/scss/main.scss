@@ -159,7 +159,8 @@ td:nth-child(even) {
         flex-direction: row;
         justify-content: space-between;
         font-size: 13px;
-        
+        width: 100%;
+        text-overflow: ellipsis;
     }
     
     #ac-el-list .details {
@@ -194,9 +195,63 @@ td:nth-child(even) {
         outline: 0;
         border: 0;
         background-color: transparent;
-        font-size: inherit;
     }
 
     #ac-el-list .ac-delete-btn:active {
         color: rgb(219, 0, 0);
     }
+
+    #ac-el-list .type-details {
+        display: flex;
+        flex-direction: row;
+        background-color: #dddddd;
+        border-radius: 10px;
+    }
+
+    #ac-el-list .type-details .action-type {
+        border-radius: 10px;
+    }
+
+    #ac-el-list .group-details {
+        display: flex;
+        background-color: #dddddd;
+        color: #636363;
+        border-radius: 10px;
+    }
+
+    #ac-el-list .group-details .action-type {
+        border-radius: 10px;
+    }
+
+    #ac-el-list header .group-indicator {
+        background-color: green;
+        font-style: italic;
+        color: white;
+        border-radius: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #ac-el-list header.group {
+        justify-content: initial;
+    }
+
+    #ac-el-list .element-details {
+        margin: 0 10px;
+        padding: 5px 0;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #ac-el-list .secondary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+
