@@ -195,6 +195,7 @@ td:nth-child(even) {
         outline: 0;
         border: 0;
         background-color: transparent;
+        overflow: initial;
     }
 
     #ac-el-list .ac-delete-btn:active {
@@ -239,7 +240,8 @@ td:nth-child(even) {
     }
 
     #ac-el-list .element-details {
-        margin: 0 10px;
+        margin-left: 10px;
+        margin-right: 5px;
         padding: 5px 0;
         font-size: 16px;
         overflow: hidden;
