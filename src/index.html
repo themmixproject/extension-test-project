@@ -10,13 +10,15 @@
         <div id="app">
             <ul id="ac-el-list">
                 <li>
-                    <div class="action-type"><span>insert</span></div>
-                    <div class="content">
-                        <header>
+                    <div class="action-type">
+                        <span>insert</span>
+                    </div>
+                    <div class="action-content">
+                        <header class="action-content-base">
                             <span style="color: blue;">input</span>
                             <button class="ac-delete-btn">Delete</button>
                         </header>
-                        <div class="details">
+                        <div class="action-details">
                             <input type="text" placeholder="username" />
                         </div>
                     </div>
@@ -25,12 +27,12 @@
                     <div class="action-type">
                         <span>goto</span>
                     </div>
-                    <div class="content">
-                        <header>
+                    <div class="action-content">
+                        <header class="action-content-base">
                             <span style="color: blue;">a</span>
                             <button class="ac-delete-btn">Delete</button>
                         </header>
-                        <div class="details">
+                        <div class="action-details">
                             href: <a href="https://example.com">https://example.com</a>
                         </div>
                     </div>
@@ -39,14 +41,14 @@
                     <div class="action-type">
                         <span>click</span>
                     </div>
-                    <div class="content">
-                        <header class="no-details">
+                    <div class="action-content-base">
+                        <div class="element-details">
                             <span style="color: blue;">button</span>
-                            <button class="ac-delete-btn">Delete</button>
-                        </header>
+                        </div>
+                        <button class="ac-delete-btn">Delete</button>
                     </div>
                 </li>
-                <li>
+                <!-- <li>
                     <header class="group">
                         <div class="type-details">
                             <div class="group-indicator">group</div>
@@ -54,14 +56,14 @@
                                 <span>click</span>
                             </div>
                         </div>
-                        <div class="secondary">
+                        <div class="action-content-header">
                             <div class="element-details">
                                 <span style="color: blue;">button</span>
                             </div>
                             <button class="ac-delete-btn">Delete</button>
                         </div>
                     </header>
-                </li>
+                </li> -->
             </ul>
             <a href="https://www.example.org">exmple link</a>
             <h1>Important</h1>

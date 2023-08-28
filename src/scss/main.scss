@@ -120,13 +120,30 @@ td:nth-child(even) {
 
     margin-bottom: 50px;
 }
-    #ac-el-list li {
+    #ac-el-list .flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ac-el-list .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #ac-el-list .flex-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    #ac-el-list .flex-space-between {
         display: flex;
         justify-content: space-between;
+    }
 
+    #ac-el-list li {
+        display: flex;
         overflow: hidden;
 
-        border: none;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         background-color: #f0f0f0;
@@ -146,8 +163,8 @@ td:nth-child(even) {
         flex-direction: column;
         font-size: 13px;
     }
-
-    #ac-el-list .content {
+    
+    #ac-el-list .action-content {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
@@ -156,31 +173,19 @@ td:nth-child(even) {
         overflow: hidden;
     }
     
-    #ac-el-list header {
+    #ac-el-list header.action-content-base {
+        font-size: 13px;
+    }
+    
+    #ac-el-list .action-content-base {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        font-size: 13px;
-        width: 100%;
-        text-overflow: ellipsis;
-    }
-    
-    #ac-el-list .details {
         overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        margin-top: 3px;
-    }
-
-    #ac-el-list header.no-details {
-        font-size: 16px;
+        width: 100%;
     }
     
-    #ac-el-list header.no-details .ac-delete-btn {
-        font-size: 13px;
-    }
-
-    #ac-el-list .details input {
+    #ac-el-list .action-details input {
         width: 100%;
         outline: 0;
         border: 0;
@@ -198,11 +203,31 @@ td:nth-child(even) {
         border: 0;
         background-color: transparent;
         overflow: initial;
+        font-size: 13px;
     }
 
     #ac-el-list .ac-delete-btn:active {
         color: rgb(219, 0, 0);
     }
+
+    #ac-el-list .element-details {
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 5px 0;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    
+    #ac-el-list .action-details {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-top: 3px;
+    }
+    
 
     #ac-el-list .type-details {
         display: flex;
@@ -241,21 +266,4 @@ td:nth-child(even) {
         justify-content: initial;
     }
 
-    #ac-el-list .element-details {
-        margin-left: 10px;
-        margin-right: 5px;
-        padding: 5px 0;
-        font-size: 16px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    #ac-el-list .secondary {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        overflow: hidden;
-        flex-grow: 1;
-    }
 
