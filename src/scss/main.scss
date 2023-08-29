@@ -120,25 +120,6 @@ td:nth-child(even) {
 
     margin-bottom: 50px;
 }
-    #ac-el-list .flex-col {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #ac-el-list .flex-row {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #ac-el-list .flex-center {
-        display: flex;
-        justify-content: center;
-    }
-
-    #ac-el-list .flex-space-between {
-        display: flex;
-        justify-content: space-between;
-    }
 
     #ac-el-list li {
         display: flex;
@@ -149,22 +130,23 @@ td:nth-child(even) {
         background-color: #f0f0f0;
         width: 100%;
         margin: 20px 0;
+        min-width: 103px;
     }
 
     #ac-el-list .action-type {
         background-color: #dddddd;
         color: #636363;
         font-style: italic;
-        padding: 5px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         font-size: 13px;
+        padding: 0 5px;
     }
-    
-    #ac-el-list .action-content {
+
+    #ac-el-list .list-item-content {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
@@ -173,11 +155,11 @@ td:nth-child(even) {
         overflow: hidden;
     }
     
-    #ac-el-list header.action-content-base {
+    #ac-el-list header {
         font-size: 13px;
     }
     
-    #ac-el-list .action-content-base {
+    #ac-el-list .main-content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -185,7 +167,7 @@ td:nth-child(even) {
         width: 100%;
     }
     
-    #ac-el-list .action-details input {
+    #ac-el-list .action-content input {
         width: 100%;
         outline: 0;
         border: 0;
@@ -214,14 +196,13 @@ td:nth-child(even) {
         margin-left: 3px;
         margin-right: 3px;
         padding: 5px 0;
-        font-size: 16px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
 
     
-    #ac-el-list .action-details {
+    #ac-el-list .action-content {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
