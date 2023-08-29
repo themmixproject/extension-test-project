@@ -121,10 +121,11 @@ td:nth-child(even) {
     margin-bottom: 50px;
 }
 
-    #ac-el-list li {
-        display: flex;
-        overflow: hidden;
 
+#ac-el-list li {
+    display: flex;
+    overflow: hidden;
+    
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         background-color: #f0f0f0;
@@ -132,7 +133,7 @@ td:nth-child(even) {
         margin: 20px 0;
         min-width: 103px;
     }
-
+    
     #ac-el-list .action-type {
         background-color: #dddddd;
         color: #636363;
@@ -145,7 +146,7 @@ td:nth-child(even) {
         font-size: 13px;
         padding: 0 5px;
     }
-
+    
     #ac-el-list .list-item-content {
         display: flex;
         flex-direction: column;
@@ -174,7 +175,7 @@ td:nth-child(even) {
         font-size: 16px;
         padding: 3px;
     }
-
+    
     #ac-el-list .ac-delete-btn {
         padding: 0;
         color: red;
@@ -187,7 +188,7 @@ td:nth-child(even) {
         overflow: initial;
         font-size: 13px;
     }
-
+    
     #ac-el-list .ac-delete-btn:active {
         color: rgb(219, 0, 0);
     }
@@ -200,7 +201,7 @@ td:nth-child(even) {
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-
+    
     
     #ac-el-list .action-content {
         overflow: hidden;
@@ -209,14 +210,14 @@ td:nth-child(even) {
         margin-top: 3px;
     }
     
-
+    
     #ac-el-list .type-details {
         display: flex;
         flex-direction: row;
         background-color: #dddddd;
         border-radius: 10px;
     }
-
+    
     #ac-el-list .type-details .action-type {
         border-radius: 10px;
     }
@@ -227,11 +228,11 @@ td:nth-child(even) {
         color: #636363;
         border-radius: 10px;
     }
-
+    
     #ac-el-list .group-details .action-type {
         border-radius: 10px;
     }
-
+    
     #ac-el-list header .group-indicator {
         background-color: green;
         font-style: italic;
@@ -247,4 +248,10 @@ td:nth-child(even) {
         justify-content: initial;
     }
 
-
+    @media screen and (max-width: 180px) {
+        #ac-el-list .action-type {
+            display: none;
+        }
+    }
+    
+    
