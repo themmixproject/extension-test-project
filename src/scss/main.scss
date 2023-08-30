@@ -185,8 +185,7 @@ td:nth-child(even) {
         background-color: transparent;
         overflow: initial;
         font-size: 13px;
-        // position: relative;
-        // right: 0;
+        box-shadow: 0 0 4px 5px #f0f0f0;
     }
     
     #ac-el-list .ac-delete-btn:active {
