@@ -10,64 +10,76 @@
         <div id="app">
             <ul id="ac-el-list">
                 <li>
-                    <div class="action-type">
-                        <span>insert</span>
-                    </div>
-                    <div class="list-item-content">
-                        <header class="main-content">
-                            <div class="element-details">
-                                <span style="color: blue;">input</span>
+                    <div class="element-item">
+                        <div class="action-type">
+                            <span>insert</span>
+                        </div>
+                        <div class="list-item-content">
+                            <header class="main-content">
+                                <div class="element-details">
+                                    <span style="color: blue;">input</span>
+                                </div>
+                                <button class="ac-delete-btn">Delete</button>
+                            </header>
+                            <div class="action-content">
+                                <input type="text" placeholder="username" />
                             </div>
-                            <button class="ac-delete-btn">Delete</button>
-                        </header>
-                        <div class="action-content">
-                            <input type="text" placeholder="username" />
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="action-type">
-                        <span>goto</span>
-                    </div>
-                    <div class="list-item-content">
-                        <header class="main-content">
-                            <div class="element-details">
-                                <span style="color: blue;">a</span>
+                    <div class="element-item">
+                        <div class="action-type">
+                            <span>goto</span>
+                        </div>
+                        <div class="list-item-content">
+                            <header class="main-content">
+                                <div class="element-details">
+                                    <span style="color: blue;">a</span>
+                                </div>
+                                <button class="ac-delete-btn">Delete</button>
+                            </header>
+                            <div class="action-content">
+                                href: <a href="https://example.com">https://example.com</a>
                             </div>
-                            <button class="ac-delete-btn">Delete</button>
-                        </header>
-                        <div class="action-content">
-                            href: <a href="https://example.com">https://example.com</a>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="action-type">
-                        <span>click</span>
-                    </div>
-                    <div class="main-content">
-                        <div class="element-details">
-                            <span style="color: blue;">button</span>
+                    <div class="element-item">
+                        <div class="action-type">
+                            <span>click</span>
                         </div>
-                        <button class="ac-delete-btn">Delete</button>
-                    </div>
-                </li>
-                <!-- <li>
-                    <header class="group">
-                        <div class="type-details">
-                            <div class="group-indicator">group</div>
-                            <div class="action-type">
-                                <span>click</span>
-                            </div>
-                        </div>
-                        <div class="list-item-content-header">
+                        <div class="main-content">
                             <div class="element-details">
                                 <span style="color: blue;">button</span>
                             </div>
                             <button class="ac-delete-btn">Delete</button>
                         </div>
-                    </header>
-                </li> -->
+                    </div>
+                </li>
+                <li>
+                    <div class="group-item">
+                        <header class="group-header">
+                            <div class="group-details">
+                                <div class="group-type-wrapper">
+                                    <div class="group-type">
+                                        group [5]
+                                    </div>
+                                </div>
+                                        
+                                <div class="action-type">click</div>
+                            </div>
+                            <div class="main-content">
+                                <div class="element-details">
+                                    <span style="color: blue;">button</span>
+                                </div>
+                                <button class="ac-delete-btn">Delete</button>
+                            </div>
+                        </header>
+                        <div class="group-content">content</div>
+                    </div>
+                </li>
             </ul>
             <a href="https://www.example.org">exmple link</a>
             <h1>Important</h1>

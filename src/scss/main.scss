@@ -123,12 +123,21 @@ td:nth-child(even) {
 
 
 #ac-el-list li {
-    display: flex;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: #f0f0f0;
     width: 100%;
     margin: 20px 0;
+}
+
+#ac-el-list .element-item {
+    display: flex;
+    flex-direction: row;
+}
+
+#ac-el-list .group-item {
+    display: flex;
+    flex-direction: column;
 }
     
     #ac-el-list .action-type {
@@ -148,8 +157,6 @@ td:nth-child(even) {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
-        margin: 5px;
-        margin-left: 3px;
         overflow: hidden;
     }
     
@@ -164,6 +171,15 @@ td:nth-child(even) {
         overflow: hidden;
         width: 100%;
         min-width: 37.58px;
+        padding: 0 5px;
+        border-radius: 10px;
+    }
+
+    #ac-el-list .action-content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 3px 5px;
     }
     
     #ac-el-list .action-content input {
@@ -192,6 +208,10 @@ td:nth-child(even) {
         color: rgb(219, 0, 0);
     }
 
+    #ac-el-list .group-item .ac-delete-btn {
+        box-shadow: 0 0 4px 5px #dddddd;
+    }
+    
     #ac-el-list .element-details {
         margin-left: 3px;
         padding: 5px 0;
@@ -199,53 +219,57 @@ td:nth-child(even) {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        min-width: 0;
+        min-width: 0; 
     }
     
     
-    #ac-el-list .action-content {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        margin-top: 3px;
-    }
     
-    
-    #ac-el-list .type-details {
+    #ac-el-list .group-header {
+        font-size: 13px;
         display: flex;
         flex-direction: row;
+        width: 100%;
         background-color: #dddddd;
         border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        overflow: hidden;
     }
     
-    #ac-el-list .type-details .action-type {
-        border-radius: 10px;
-    }
-
     #ac-el-list .group-details {
         display: flex;
-        background-color: #dddddd;
-        color: #636363;
+        flex-direction: row;
+        background-color: #00aeff;
         border-radius: 10px;
-    }
-    
-    #ac-el-list .group-details .action-type {
-        border-radius: 10px;
-    }
-    
-    #ac-el-list header .group-indicator {
-        background-color: green;
+        border-bottom-left-radius: 0;
+        font-size: 13px;
         font-style: italic;
-        color: white;
+    }    
+    
+    
+    #ac-el-list .group-type-wrapper {
         border-radius: 10px;
-        padding: 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-color: inherit;
     }
 
-    #ac-el-list header.group {
-        justify-content: initial;
+    #ac-el-list .group-type {
+        color: white;
+        white-space: nowrap;
+        word-wrap: none;
+        padding: 0 5px;
+    }
+
+    #ac-el-list .group-details .action-type {
+        border-radius: 10px;
+        background-color: #0095da;
+        color: white;
+    }
+
+    #ac-el-list .group-content {
+        padding: 3px 5px;
     }
     
     
