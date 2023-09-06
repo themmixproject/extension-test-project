@@ -269,6 +269,10 @@ td:nth-child(even) {
         padding: 0 5px;
     }
 
+    #ac-el-list .group-content:empty {
+        padding-bottom: 20px;
+    }
+
 
     #ac-el-list .group-content li {
         width: initial;
