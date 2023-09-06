@@ -128,6 +128,7 @@ td:nth-child(even) {
     background-color: #f0f0f0;
     width: 100%;
     margin: 20px 0;
+    overflow: hidden;
 }
 
 #ac-el-list .element-item {
@@ -207,14 +208,9 @@ td:nth-child(even) {
     #ac-el-list .ac-delete-btn:active {
         color: rgb(219, 0, 0);
     }
-
-    #ac-el-list .group-item .ac-delete-btn {
-        box-shadow: 0 0 4px 5px #dddddd;
-    }
     
     #ac-el-list .element-details {
         padding: 3px 0;
-        box-sizing: border-box;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -228,7 +224,7 @@ td:nth-child(even) {
         display: flex;
         flex-direction: row;
         width: 100%;
-        background-color: #dddddd;
+        background-color: #f0f0f0;
         border-radius: 10px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
@@ -268,7 +264,17 @@ td:nth-child(even) {
     }
 
     #ac-el-list .group-content {
-        padding: 3px 5px;
+        list-style: none;
+        background-color: white;
+        padding: 0 5px;
     }
+
+
+    #ac-el-list .group-content li {
+        width: initial;
+        margin: 10px 0;
+    }
+
+
     
     
